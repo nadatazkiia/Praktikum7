@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Praktikum Pra UTS</title>
+        <style>
+          label{
+            font-weight: bold;
+            display: block;
+          }
+          
+          .form-group{
+            margin-bottom: 15px;
+          }
+          
+          .form-container{
+            width: 35%;
+            border: 3px outset linen;
+            padding: 30px;
+            margin: 100px auto;
+            background-color: linen;
+          }
+          
+          h2{
+            text-align: center;
+          }
+          
+          #submit{
+            background-color: cornflowerblue;
+            border-radius: 4px;
+            border: none;
+            width: 70px;
+            height: 25px;
+            color: white;
+            font-weight: bold;
+          }
+          
+          #reset{
+            background-color: salmon;
+            border-radius: 4px;
+            border: none;
+            width: 55px;
+            height: 25px;
+            color: white;
+            font-weight: bold;
+          }
+         </style>
+    </head>
+    <body>
+      <div class="form-container">
+        <h2>FORM ENTRY DATA PEGAWAI</h2>
+        
+        <form method="post" action="">
+          
+          <div class="form-group">
+            <label for="nik">NIK</label>
+            <input type="text" id="nik" name="nik">
+          </div>
+          
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama">
+          </div>
+          
+          <div class="form-group">
+            <label for="tlahir1">Tempat Lahir</label>
+            <input type="text" id="tlahir1" name="tlahir1">
+          </div>
+          
+          <div class="form-group">
+            <label for="tlahir2">Tanggal Lahir</label>
+            <input type="text" id="tlahir2" name="tlahir2">
+          </div>
+          
+          <div class="form-group">
+            <label for="alamat">Alamat</label>
+             <textarea id="alamat" name="alamat" rows="4" cols="30"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="notelp">No Telepon</label>
+            <input type="number" id="notelp" name="notelp">
+          </div>
+          
+          <div class="form-group">
+            <label for="jabatan">Jabatan</label>
+            <select name="jabatan" id="jabatan">
+              <option value="Operator">Operator</option>
+              <option value="Leader">Leader</option>
+              <option value="Supervisor">Supervisor</option>
+              <option value="Assistant Manager">Assistant Manager</option>
+              <option value="Manager">Manager</option>
+              <option value="Director">Director</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select name="status" id="status">
+              <option value="aktif">Aktif</option>
+              <option value="tidakaktif">Tidak Aktif</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <input type="submit" value="Simpan" id="submit">
+            <input type="reset" value="Batal" id="reset">
+          </div>
+        </form>
+      </div>
+    </body>
+</html>
